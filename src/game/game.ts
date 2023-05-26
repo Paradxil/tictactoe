@@ -1,4 +1,4 @@
-import { Board, Cell } from "./types";
+import { Board, Cell } from "../types";
 
 export class TicTacToe {
   board: Board = Array.from({ length: 9 }).map(() => Cell.EMPTY);
@@ -18,7 +18,7 @@ export class TicTacToe {
   };
 
   move = (x: number, y: number, player: Cell) => {
-    if (x > 8 || x < 0 || y > 8 || y < 0) {
+    if (x > 2 || x < 0 || y > 2 || y < 0) {
       throw new Error("Invalid position");
     }
 
