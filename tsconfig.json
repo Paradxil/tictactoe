@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "allowJs": false,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true
+  }
+}
