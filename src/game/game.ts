@@ -159,7 +159,7 @@ export class TicTacToe {
       return this;
     }
 
-    this.winningPositions.find((indices) => {
+    const foundWinner = this.winningPositions.find((indices) => {
       // Check if all indices in the given position are filled by the same cell type
       const potentialWinner = indices
         .slice(1)
@@ -178,7 +178,7 @@ export class TicTacToe {
       return playerWon;
     });
 
-    if (!this.board.includes(Cell.EMPTY)) {
+    if (!foundWinner && !this.board.includes(Cell.EMPTY)) {
       this.winner = Winner.TIE;
     }
 
