@@ -4,4 +4,10 @@ export enum Cell {
   EMPTY = " ",
 }
 
+export enum Winner {
+  X = "X",
+  O = "O",
+  TIE = "TIE",
+}
+
 export type Board = Cell[];
