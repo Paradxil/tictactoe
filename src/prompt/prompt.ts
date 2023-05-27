@@ -12,10 +12,10 @@ const selectKeys = ["return", "space"];
 
 // Simple utility to let a user select an option in the terminal
 // Would likely be better to use an existing npm package here.
-export const prompt = async (
+export const prompt = async <T = string>(
   question: string,
-  options: string[]
-): Promise<string> => {
+  options: T[]
+): Promise<T> => {
   let currentOption = 0;
   let key: string;
 
