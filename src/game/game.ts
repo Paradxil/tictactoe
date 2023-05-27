@@ -45,6 +45,7 @@ export class TicTacToe {
     return this;
   };
 
+  // Convenience wrapper around moveAtIndex
   move = (x: number, y: number) => {
     if (x > 2 || x < 0 || y > 2 || y < 0) {
       throw new Error("Invalid position");
@@ -54,6 +55,9 @@ export class TicTacToe {
     return this.moveAtIndex(index);
   };
 
+  // Plays a move at the given index for the current player.
+  // Checks for a winner.
+  // Switches whose turn it is.
   moveAtIndex = (index: number) => {
     if (index < 0 || index > 8) {
       throw new Error("Invalid position");

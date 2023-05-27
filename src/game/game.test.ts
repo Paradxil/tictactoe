@@ -96,6 +96,13 @@ describe("game", () => {
     expect(game.winner).toBe(Winner.X);
   });
 
+  it("blocks winning move by opponent", () => {
+    // Should block X from winning
+    game.move(0, 0).move(1, 1).move(0, 1).autoMove();
+
+    expect(() => game.move(0, 2)).toThrow("Position already taken");
+  });
+
   // Since ideal tic tac toe play results in a tie
   it("should tie when only auto move is played", () => {
     game
