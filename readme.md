@@ -2,6 +2,21 @@
 
 **Advocate Engineering**
 
+## Running the game
+
+Built using node 18.16.0
+
+`npm install`
+`npm run start`
+
+## Development
+
+`npm run dev`
+
+## Tests
+
+`npm run test`
+
 **Tech Startup Coding Challenge: Ultimate Tic Tac Toe Showdown**
 
 Welcome to our exciting tech startup coding challenge, the Ultimate Tic Tac Toe Showdown! This is an opportunity not only to prove your prowess in coding, but also to have some fun while showcasing your skills.
