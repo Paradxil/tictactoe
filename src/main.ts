@@ -83,6 +83,8 @@ const run = async () => {
 
   console.clear();
 
+  game.render();
+
   if (game.winner === Winner.TIE) {
     console.log(`\nIt was a tie!\n`);
   } else {
